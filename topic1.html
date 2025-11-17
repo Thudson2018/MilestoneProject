@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🎨 CUSTOMIZE: Change the title to your first topic -->
+    <title>Topic 1: HTML Fundamentals</title>
+    
+    <link rel="stylesheet" href="styles.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html" class="active">Topic 1</a></li>
+                <li><a href="topic2.html">Topic 2</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 🎨 CUSTOMIZE: Change this heading to your first topic title -->
+        <h1>Topic 1: HTML Fundamentals</h1>
+        
+        <!-- 🎨 CUSTOMIZE: Replace with your topic introduction -->
+        <p>
+            HTML (HyperText Markup Language) is the foundation of all web pages. It provides 
+            the structure and content of websites, defining elements like headings, paragraphs, 
+            links, images, and more. Understanding HTML is the first step in becoming a web developer.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Add your first subtopic -->
+        <h2>What is HTML?</h2>
+        <p>
+            HTML is a markup language that uses tags to define different parts of a web page. 
+            These tags tell the web browser how to display the content. HTML documents are 
+            plain text files with a .html extension that can be opened in any web browser.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this information box -->
+        <div class="info-box">
+            <h3>Key Concept</h3>
+            <p>
+                HTML uses a system of tags enclosed in angle brackets (< >) to mark up content. 
+                Most tags come in pairs: an opening tag and a closing tag. For example: 
+                <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your second subtopic -->
+        <h2>Basic HTML Structure</h2>
+        <p>
+            Every HTML document follows a standard structure that includes several essential elements. 
+            Here's what a basic HTML page looks like:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own list items -->
+        <ul>
+            <li><strong>&lt;!DOCTYPE html&gt;:</strong> Declares the document type and HTML version</li>
+            <li><strong>&lt;html&gt;:</strong> The root element that contains all other elements</li>
+            <li><strong>&lt;head&gt;:</strong> Contains metadata, title, and links to stylesheets</li>
+            <li><strong>&lt;body&gt;:</strong> Contains the visible content of the web page</li>
+        </ul>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own image URL -->
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800" 
+             alt="HTML code on a computer screen">
+        <p class="image-caption">HTML code structure example</p>
+
+        <!-- 🎨 CUSTOMIZE: Add your third subtopic -->
+        <h2>Common HTML Elements</h2>
+        <p>
+            HTML provides a wide variety of elements for different types of content. Here are 
+            some of the most commonly used HTML elements:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this table with your own content -->
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Purpose</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                <td>Headings (h1 is largest, h6 is smallest)</td>
+                <td>&lt;h1&gt;Main Title&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Paragraph of text</td>
+                <td>&lt;p&gt;This is a paragraph.&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Hyperlink to another page</td>
+                <td>&lt;a href="page.html"&gt;Link&lt;/a&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Image</td>
+                <td>&lt;img src="image.jpg" alt="Description"&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt; and &lt;li&gt;</td>
+                <td>Unordered (bulleted) list</td>
+                <td>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt; and &lt;li&gt;</td>
+                <td>Ordered (numbered) list</td>
+                <td>&lt;ol&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ol&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Container for grouping elements</td>
+                <td>&lt;div&gt;Content here&lt;/div&gt;</td>
+            </tr>
+        </table>
+
+        <!-- 🎨 CUSTOMIZE: Add your fourth subtopic -->
+        <h2>HTML Attributes</h2>
+        <p>
+            HTML elements can have attributes that provide additional information about the element. 
+            Attributes are always specified in the opening tag and usually come in name/value pairs.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify these list items -->
+        <ol>
+            <li><strong>href:</strong> Specifies the URL for links (used with &lt;a&gt; tag)</li>
+            <li><strong>src:</strong> Specifies the source file for images (used with &lt;img&gt; tag)</li>
+            <li><strong>alt:</strong> Provides alternative text for images</li>
+            <li><strong>class:</strong> Assigns a class name for CSS styling</li>
+            <li><strong>id:</strong> Assigns a unique identifier to an element</li>
+            <li><strong>style:</strong> Adds inline CSS styling to an element</li>
+        </ol>
+
+        <!-- 🎨 CUSTOMIZE: Add a warning box with your own content -->
+        <div class="warning-box">
+            <h3>Important Note</h3>
+            <p>
+                Always include the <code>alt</code> attribute for images. This improves accessibility 
+                for users with screen readers and provides a description if the image fails to load. 
+                It's also important for SEO (Search Engine Optimization).
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your fifth subtopic -->
+        <h2>Semantic HTML</h2>
+        <p>
+            Semantic HTML uses elements that clearly describe their meaning to both the browser 
+            and the developer. Using semantic elements makes your code more readable and improves 
+            accessibility and SEO.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own content -->
+        <ul>
+            <li><strong>&lt;header&gt;:</strong> Defines a header section for a page or section</li>
+            <li><strong>&lt;nav&gt;:</strong> Defines a navigation menu</li>
+            <li><strong>&lt;main&gt;:</strong> Defines the main content of the page</li>
+            <li><strong>&lt;article&gt;:</strong> Defines independent, self-contained content</li>
+            <li><strong>&lt;section&gt;:</strong> Defines a section of related content</li>
+            <li><strong>&lt;aside&gt;:</strong> Defines content aside from the main content</li>
+            <li><strong>&lt;footer&gt;:</strong> Defines a footer section for a page or section</li>
+        </ul>
+
+        <!-- 🎨 CUSTOMIZE: Add a success box with your own message -->
+        <div class="success-box">
+            <h3>Best Practice</h3>
+            <p>
+                Use semantic HTML elements whenever possible instead of generic &lt;div&gt; elements. 
+                This makes your code more meaningful, improves accessibility for users with disabilities, 
+                and helps search engines better understand your content structure.
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your final subtopic -->
+        <h2>HTML Forms</h2>
+        <p>
+            HTML forms are used to collect user input. They contain form elements like text fields, 
+            checkboxes, radio buttons, and submit buttons. Forms are essential for interactive 
+            websites that need to gather information from users.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this table -->
+        <table>
+            <tr>
+                <th>Form Element</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>&lt;input type="text"&gt;</td>
+                <td>Single-line text input</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="email"&gt;</td>
+                <td>Email address input with validation</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="password"&gt;</td>
+                <td>Password input (characters are hidden)</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="checkbox"&gt;</td>
+                <td>Checkbox for multiple selections</td>
+            </tr>
+            <tr>
+                <td>&lt;input type="radio"&gt;</td>
+                <td>Radio button for single selection</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Multi-line text input</td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Dropdown selection menu</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Clickable button</td>
+            </tr>
+        </table>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own image URL -->
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" 
+             alt="Web developer working on HTML code">
+        <p class="image-caption">Creating HTML forms for user interaction</p>
+
+        <!-- 🎨 CUSTOMIZE: Add your conclusion -->
+        <h2>Summary</h2>
+        <p>
+            HTML is the backbone of web development, providing the structure and content for all 
+            websites. By mastering HTML fundamentals, including elements, attributes, semantic markup, 
+            and forms, you'll have a solid foundation for creating well-structured web pages. 
+            Remember to always write clean, semantic HTML code that is accessible and easy to maintain.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Update navigation text -->
+        <p class="text-center mt-2">
+            <a href="index.html" class="btn">Back to Home</a>
+            <a href="topic2.html" class="btn">Continue to Topic 2</a>
+        </p>
+    </main>
+
+    <footer>
+        <!-- 🎨 CUSTOMIZE: Update footer text -->
+        <p>This is a class project for <a href="https://ksuweb.github.io/IT3203/" target="_blank">IT3203</a></p>
+        <p>&copy; 2024 Web Development Tutorial | Created for Educational Purposes</p>
+    </footer>
+</body>
+</html>

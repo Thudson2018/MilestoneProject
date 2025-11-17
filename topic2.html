@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🎨 CUSTOMIZE: Change the title to your second topic -->
+    <title>Topic 2: CSS Styling and Layout</title>
+    
+    <link rel="stylesheet" href="styles.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topic1.html">Topic 1</a></li>
+                <li><a href="topic2.html" class="active">Topic 2</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 🎨 CUSTOMIZE: Change this heading to your second topic title -->
+        <h1>Topic 2: CSS Styling and Layout</h1>
+        
+        <!-- 🎨 CUSTOMIZE: Replace with your topic introduction -->
+        <p>
+            CSS (Cascading Style Sheets) is the language used to style and layout web pages. 
+            While HTML provides the structure and content, CSS controls the visual presentation, 
+            including colors, fonts, spacing, and positioning. Learning CSS is essential for 
+            creating attractive and professional-looking websites.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Add your first subtopic -->
+        <h2>What is CSS?</h2>
+        <p>
+            CSS is a stylesheet language that describes how HTML elements should be displayed 
+            on screen, paper, or other media. It allows you to separate content from presentation, 
+            making it easier to maintain and update your website's appearance. With CSS, you can 
+            control the layout of multiple web pages all at once.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this information box -->
+        <div class="info-box">
+            <h3>Key Concept</h3>
+            <p>
+                CSS works by selecting HTML elements and applying style rules to them. A CSS rule 
+                consists of a selector (which element to style) and a declaration block (what 
+                styles to apply). For example: <code>h1 { color: blue; font-size: 24px; }</code>
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your second subtopic -->
+        <h2>Ways to Add CSS</h2>
+        <p>
+            There are three ways to add CSS to your HTML documents. Each method has its own 
+            use cases and advantages:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own list items -->
+        <ol>
+            <li>
+                <strong>Inline CSS:</strong> Styles are added directly to HTML elements using the 
+                <code>style</code> attribute. This method is useful for quick, one-time styling 
+                but is not recommended for larger projects.
+                <br>Example: <code>&lt;p style="color: red;"&gt;Text&lt;/p&gt;</code>
+            </li>
+            <li>
+                <strong>Internal CSS:</strong> Styles are placed in a <code>&lt;style&gt;</code> 
+                tag within the HTML document's <code>&lt;head&gt;</code> section. This is useful 
+                for single-page websites.
+            </li>
+            <li>
+                <strong>External CSS:</strong> Styles are written in a separate .css file and 
+                linked to the HTML document. This is the best practice for most websites as it 
+                allows you to reuse styles across multiple pages.
+                <br>Example: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+            </li>
+        </ol>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own image URL -->
+        <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=800" 
+             alt="CSS code on a computer screen">
+        <p class="image-caption">CSS styling code example</p>
+
+        <!-- 🎨 CUSTOMIZE: Add your third subtopic -->
+        <h2>CSS Selectors</h2>
+        <p>
+            CSS selectors are patterns used to select the HTML elements you want to style. 
+            Understanding selectors is crucial for applying styles effectively. Here are the 
+            most common types of selectors:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this table with your own content -->
+        <table>
+            <tr>
+                <th>Selector Type</th>
+                <th>Syntax</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Element Selector</td>
+                <td>p { }</td>
+                <td>Selects all elements of a specific type</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>.classname { }</td>
+                <td>Selects all elements with a specific class</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>#idname { }</td>
+                <td>Selects a single element with a specific ID</td>
+            </tr>
+            <tr>
+                <td>Universal Selector</td>
+                <td>* { }</td>
+                <td>Selects all elements on the page</td>
+            </tr>
+            <tr>
+                <td>Descendant Selector</td>
+                <td>div p { }</td>
+                <td>Selects all p elements inside div elements</td>
+            </tr>
+            <tr>
+                <td>Attribute Selector</td>
+                <td>[type="text"] { }</td>
+                <td>Selects elements with a specific attribute</td>
+            </tr>
+        </table>
+
+        <!-- 🎨 CUSTOMIZE: Add a warning box with your own content -->
+        <div class="warning-box">
+            <h3>Best Practice</h3>
+            <p>
+                Use class selectors for styling multiple elements and ID selectors for unique 
+                elements. Avoid using too many ID selectors as they have high specificity and 
+                can make your CSS harder to maintain. Classes are more flexible and reusable.
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your fourth subtopic -->
+        <h2>The CSS Box Model</h2>
+        <p>
+            The CSS box model is a fundamental concept that describes how elements are rendered 
+            on a web page. Every HTML element is essentially a rectangular box, and the box model 
+            defines the space that element occupies. Understanding the box model is essential for 
+            controlling layout and spacing.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify these list items -->
+        <ul>
+            <li>
+                <strong>Content:</strong> The actual content of the element (text, images, etc.)
+            </li>
+            <li>
+                <strong>Padding:</strong> The space between the content and the border. Padding 
+                is transparent and increases the element's size.
+            </li>
+            <li>
+                <strong>Border:</strong> A line that surrounds the padding and content. Borders 
+                can have different styles, widths, and colors.
+            </li>
+            <li>
+                <strong>Margin:</strong> The space outside the border. Margins create space between 
+                elements and are also transparent.
+            </li>
+        </ul>
+
+        <!-- 🎨 CUSTOMIZE: Add your fifth subtopic -->
+        <h2>Common CSS Properties</h2>
+        <p>
+            CSS provides hundreds of properties for styling elements. Here are some of the most 
+            commonly used properties that every web developer should know:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this table -->
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Purpose</th>
+                <th>Example Values</th>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Sets text color</td>
+                <td>red, #FF0000, rgb(255,0,0)</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td>Sets background color</td>
+                <td>blue, #0000FF, rgba(0,0,255,0.5)</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Sets text size</td>
+                <td>16px, 1.5em, 100%</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Sets font type</td>
+                <td>Arial, 'Times New Roman', sans-serif</td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>Sets outer spacing</td>
+                <td>10px, 1em, 10px 20px</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Sets inner spacing</td>
+                <td>15px, 1rem, 10px 20px 10px 20px</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Sets border style</td>
+                <td>1px solid black, 2px dashed red</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Sets element width</td>
+                <td>100px, 50%, auto</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Sets element height</td>
+                <td>200px, 50vh, auto</td>
+            </tr>
+        </table>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own image URL -->
+        <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800" 
+             alt="Web design with CSS styling">
+        <p class="image-caption">Creating beautiful designs with CSS</p>
+
+        <!-- 🎨 CUSTOMIZE: Add your sixth subtopic -->
+        <h2>CSS Layout Techniques</h2>
+        <p>
+            CSS provides several methods for creating page layouts. Modern CSS offers powerful 
+            layout systems that make it easier to create responsive and flexible designs:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own content -->
+        <ul>
+            <li>
+                <strong>Flexbox:</strong> A one-dimensional layout method for arranging items in 
+                rows or columns. Perfect for navigation bars, card layouts, and centering content.
+            </li>
+            <li>
+                <strong>CSS Grid:</strong> A two-dimensional layout system for creating complex 
+                grid-based layouts. Ideal for page layouts, galleries, and dashboard designs.
+            </li>
+            <li>
+                <strong>Float:</strong> An older technique for positioning elements. Still used 
+                for wrapping text around images, but largely replaced by Flexbox and Grid.
+            </li>
+            <li>
+                <strong>Position:</strong> Controls how elements are positioned (static, relative, 
+                absolute, fixed, sticky). Useful for overlays, tooltips, and fixed headers.
+            </li>
+        </ul>
+
+        <!-- 🎨 CUSTOMIZE: Add a success box with your own message -->
+        <div class="success-box">
+            <h3>Modern Best Practice</h3>
+            <p>
+                Use Flexbox for one-dimensional layouts (rows or columns) and CSS Grid for 
+                two-dimensional layouts (rows and columns together). These modern layout methods 
+                are more powerful, flexible, and easier to use than older techniques like floats 
+                and positioning.
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Add your seventh subtopic -->
+        <h2>Responsive Design with CSS</h2>
+        <p>
+            Responsive design ensures that your website looks good on all devices, from mobile 
+            phones to desktop computers. CSS provides tools to create responsive layouts that 
+            adapt to different screen sizes:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify these list items -->
+        <ol>
+            <li>
+                <strong>Media Queries:</strong> Allow you to apply different styles based on 
+                device characteristics like screen width, height, or orientation.
+                <br>Example: <code>@media (max-width: 768px) { /* styles for mobile */ }</code>
+            </li>
+            <li>
+                <strong>Flexible Units:</strong> Use relative units like percentages, em, rem, 
+                vw, and vh instead of fixed pixel values for more flexible layouts.
+            </li>
+            <li>
+                <strong>Flexible Images:</strong> Set images to <code>max-width: 100%</code> so 
+                they scale down on smaller screens without breaking the layout.
+            </li>
+            <li>
+                <strong>Mobile-First Approach:</strong> Design for mobile devices first, then 
+                add styles for larger screens using media queries.
+            </li>
+        </ol>
+
+        <!-- 🎨 CUSTOMIZE: Add your eighth subtopic -->
+        <h2>CSS Colors and Gradients</h2>
+        <p>
+            CSS offers multiple ways to specify colors and create beautiful visual effects. 
+            Understanding color systems helps you create visually appealing designs:
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Modify this table -->
+        <table>
+            <tr>
+                <th>Color Format</th>
+                <th>Syntax</th>
+                <th>Use Case</th>
+            </tr>
+            <tr>
+                <td>Named Colors</td>
+                <td>red, blue, green</td>
+                <td>Quick prototyping, basic colors</td>
+            </tr>
+            <tr>
+                <td>Hexadecimal</td>
+                <td>#FF0000, #00F</td>
+                <td>Most common, precise colors</td>
+            </tr>
+            <tr>
+                <td>RGB</td>
+                <td>rgb(255, 0, 0)</td>
+                <td>Precise color mixing</td>
+            </tr>
+            <tr>
+                <td>RGBA</td>
+                <td>rgba(255, 0, 0, 0.5)</td>
+                <td>Colors with transparency</td>
+            </tr>
+            <tr>
+                <td>HSL</td>
+                <td>hsl(0, 100%, 50%)</td>
+                <td>Intuitive color adjustments</td>
+            </tr>
+            <tr>
+                <td>Linear Gradient</td>
+                <td>linear-gradient(to right, red, blue)</td>
+                <td>Smooth color transitions</td>
+            </tr>
+        </table>
+
+        <!-- 🎨 CUSTOMIZE: Add an information box -->
+        <div class="info-box">
+            <h3>Pro Tip</h3>
+            <p>
+                Use CSS variables (custom properties) to store colors and other values that you 
+                use frequently. This makes it easier to maintain consistent styling and update 
+                your color scheme. Example: <code>:root { --primary-color: #667eea; }</code>
+            </p>
+        </div>
+
+        <!-- 🎨 CUSTOMIZE: Replace with your own image URL -->
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" 
+             alt="Colorful CSS design on laptop">
+        <p class="image-caption">Creating vibrant designs with CSS colors and gradients</p>
+
+        <!-- 🎨 CUSTOMIZE: Add your conclusion -->
+        <h2>Summary</h2>
+        <p>
+            CSS is a powerful tool for transforming plain HTML into beautiful, professional websites. 
+            By mastering CSS fundamentals including selectors, the box model, layout techniques, 
+            and responsive design, you'll be able to create visually stunning and user-friendly 
+            web pages. Remember to practice regularly, experiment with different properties, and 
+            stay updated with modern CSS features like Flexbox and Grid.
+        </p>
+
+        <!-- 🎨 CUSTOMIZE: Update navigation text -->
+        <p class="text-center mt-2">
+            <a href="topic1.html" class="btn">Back to Topic 1</a>
+            <a href="references.html" class="btn">View References</a>
+        </p>
+    </main>
+
+    <footer>
+        <!-- 🎨 CUSTOMIZE: Update footer text -->
+        <p>This is a class project for <a href="https://ksuweb.github.io/IT3203/" target="_blank">IT3203</a></p>
+        <p>&copy; 2024 Web Development Tutorial | Created for Educational Purposes</p>
+    </footer>
+</body>
+</html>
